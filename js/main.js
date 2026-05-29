@@ -69,4 +69,32 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 5. Language Switcher Logic
+    const langSwitchBtn = document.getElementById('lang-switch-btn');
+    const langText = langSwitchBtn.querySelector('.lang-text');
+    
+    const setLanguage = (lang) => {
+        if (lang === 'en') {
+            document.body.classList.remove('lang-tr');
+            document.body.classList.add('lang-en');
+            langText.textContent = 'TR';
+            localStorage.setItem('preferred-lang', 'en');
+        } else {
+            document.body.classList.remove('lang-en');
+            document.body.classList.add('lang-tr');
+            langText.textContent = 'EN';
+            localStorage.setItem('preferred-lang', 'tr');
+        }
+    };
+
+    // Load saved preference or default to TR
+    const savedLang = localStorage.getItem('preferred-lang') || 'tr';
+    setLanguage(savedLang);
+
+    langSwitchBtn.addEventListener('click', () => {
+        const currentLang = document.body.classList.contains('lang-en') ? 'en' : 'tr';
+        const newLang = currentLang === 'tr' ? 'en' : 'tr';
+        setLanguage(newLang);
+    });
 });

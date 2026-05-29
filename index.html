@@ -31,18 +31,53 @@
 
             <nav class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link active">Ana Sayfa</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">Hakkımızda</a></li>
-                    <li class="nav-item"><a href="#camps" class="nav-link">Kamplarımız</a></li>
-                    <li class="nav-item"><a href="#activities" class="nav-link">Etkinlikler</a></li>
-                    <li class="nav-item"><a href="#gallery" class="nav-link">Galeri</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">İletişim</a></li>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">
+                            <span data-lang="tr">Ana Sayfa</span>
+                            <span data-lang="en">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <span data-lang="tr">Hakkımızda</span>
+                            <span data-lang="en">About Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#camps" class="nav-link">
+                            <span data-lang="tr">Kamplarımız</span>
+                            <span data-lang="en">Our Camps</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#activities" class="nav-link">
+                            <span data-lang="tr">Etkinlikler</span>
+                            <span data-lang="en">Activities</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">
+                            <span data-lang="tr">Galeri</span>
+                            <span data-lang="en">Gallery</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <span data-lang="tr">İletişim</span>
+                            <span data-lang="en">Contact</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
             <div class="header-actions">
+                <button class="lang-switch-btn" id="lang-switch-btn" aria-label="Dili Değiştir / Switch Language">
+                    <span class="lang-text">TR</span>
+                    <i class="fa-solid fa-globe"></i>
+                </button>
                 <a href="#booking" class="btn btn-primary btn-header">
-                    <span>Rezervasyon</span>
+                    <span data-lang="tr">Rezervasyon</span>
+                    <span data-lang="en">Book Now</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
                 <button class="hamburger-btn" id="hamburger-btn" aria-label="Menüyü Aç">
@@ -57,29 +92,78 @@
     <!-- Mobile Navigation Overlay -->
     <div class="mobile-nav" id="mobile-nav">
         <ul class="mobile-nav-list">
-            <li class="mobile-nav-item"><a href="#home" class="mobile-nav-link active">Ana Sayfa</a></li>
-            <li class="mobile-nav-item"><a href="#about" class="mobile-nav-link">Hakkımızda</a></li>
-            <li class="mobile-nav-item"><a href="#camps" class="mobile-nav-link">Kamplarımız</a></li>
-            <li class="mobile-nav-item"><a href="#activities" class="mobile-nav-link">Etkinlikler</a></li>
-            <li class="mobile-nav-item"><a href="#gallery" class="mobile-nav-link">Galeri</a></li>
-            <li class="mobile-nav-item"><a href="#contact" class="mobile-nav-link">İletişim</a></li>
+            <li class="mobile-nav-item">
+                <a href="#home" class="mobile-nav-link active">
+                    <span data-lang="tr">Ana Sayfa</span>
+                    <span data-lang="en">Home</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#about" class="mobile-nav-link">
+                    <span data-lang="tr">Hakkımızda</span>
+                    <span data-lang="en">About Us</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#camps" class="mobile-nav-link">
+                    <span data-lang="tr">Kamplarımız</span>
+                    <span data-lang="en">Our Camps</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#activities" class="mobile-nav-link">
+                    <span data-lang="tr">Etkinlikler</span>
+                    <span data-lang="en">Activities</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#gallery" class="mobile-nav-link">
+                    <span data-lang="tr">Galeri</span>
+                    <span data-lang="en">Gallery</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#contact" class="mobile-nav-link">
+                    <span data-lang="tr">İletişim</span>
+                    <span data-lang="en">Contact</span>
+                </a>
+            </li>
         </ul>
         <div class="mobile-nav-actions">
-            <a href="#booking" class="btn btn-accent btn-full">Rezervasyon Yap</a>
+            <a href="#booking" class="btn btn-accent btn-full">
+                <span data-lang="tr">Rezervasyon Yap</span>
+                <span data-lang="en">Book a Spot</span>
+            </a>
         </div>
     </div>
 
-    <!-- Temporary Hero Section to showcase header transparent/scrolled styles -->
+    <!-- Hero Section -->
     <section id="home" class="hero-showcase">
         <div class="hero-overlay"></div>
         <div class="container hero-container">
             <div class="hero-content">
-                <span class="hero-badge">Doğanın Kucağında Yeni Bir Macera</span>
-                <h1 class="hero-title">Geleceğin Doğa Liderlerini Yetiştiriyoruz</h1>
-                <p class="hero-desc">Ankara Doğa Kampüsü ile çocuklarınız doğayı keşfederken özgüven, takım çalışması ve ekolojik farkındalık kazanıyor. Profesyonel eğitmenlerimizle unutulmaz bir kamp deneyimi.</p>
+                <span class="hero-badge">
+                    <i class="fa-solid fa-compass"></i>
+                    <span data-lang="tr">Doğanın Kucağında Yeni Bir Macera</span>
+                    <span data-lang="en">A New Adventure in the Heart of Nature</span>
+                </span>
+                <h1 class="hero-title">
+                    <span data-lang="tr">Geleceğin Doğa Liderlerini Yetiştiriyoruz</span>
+                    <span data-lang="en">Nurturing the Nature Leaders of Tomorrow</span>
+                </h1>
+                <p class="hero-desc">
+                    <span data-lang="tr">Ankara Doğa Kampüsü ile çocuklarınız doğayı keşfederken özgüven, takım çalışması ve ekolojik farkındalık kazanıyor. Profesyonel eğitmenlerimizle unutulmaz bir kamp deneyimi.</span>
+                    <span data-lang="en">With Ankara Nature Campus, your children build self-confidence, teamwork, and ecological awareness while exploring nature. An unforgettable experience with certified professional guides.</span>
+                </p>
                 <div class="hero-buttons">
-                    <a href="#camps" class="btn btn-accent">Kampları Keşfet</a>
-                    <a href="#about" class="btn btn-outline">Daha Fazla Bilgi</a>
+                    <a href="#camps" class="btn btn-accent">
+                        <span data-lang="tr">Kampları Keşfet</span>
+                        <span data-lang="en">Explore Camps</span>
+                    </a>
+                    <a href="#about" class="btn btn-outline">
+                        <span data-lang="tr">Daha Fazla Bilgi</span>
+                        <span data-lang="en">Learn More</span>
+                    </a>
                 </div>
             </div>
         </div>

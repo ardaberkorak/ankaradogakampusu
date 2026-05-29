@@ -165,6 +165,47 @@ img {
     box-shadow: 0 10px 20px rgba(212, 163, 115, 0.3);
 }
 
+/* --- MULTILINGUAL SYSTEM --- */
+body.lang-tr [data-lang="en"] {
+    display: none !important;
+}
+body.lang-en [data-lang="tr"] {
+    display: none !important;
+}
+
+.lang-switch-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: var(--transition-fast);
+}
+
+.main-header.scrolled .lang-switch-btn {
+    border-color: rgba(15, 23, 42, 0.15);
+    color: var(--text-dark);
+}
+
+.lang-switch-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.main-header.scrolled .lang-switch-btn:hover {
+    background-color: rgba(15, 23, 42, 0.05);
+    border-color: var(--primary-light);
+    color: var(--primary-light);
+}
+
 /* --- HEADER STYLES --- */
 .main-header {
     position: fixed;
