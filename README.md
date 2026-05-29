@@ -46,6 +46,7 @@ ankaradogakampusu/
 │   ├── about-sub.png      # Hakkımızda dekoratif ikinci görsel
 │   └── camp-summer.png    # Yaz kampı tanıtım görseli
 ├── index.html             # Ana HTML5 belgesi
+├── success.html           # Form gönderim başarı sayfası
 └── README.md              # Proje dökümantasyonu
 ```
 

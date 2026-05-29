@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ankara Doğa Kampüsü - Rezervasyon Talebiniz Alındı!">
+    <title>Rezervasyon Alındı | Ankara Doğa Kampüsü</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌲</text></svg>">
+    
+    <style>
+        :root {
+            --primary: #1b4332;
+            --primary-light: #2d6a4f;
+            --accent: #d4a373;
+            --white: #ffffff;
+            --text-dark: #0f172a;
+            --bg-dark: #081c15;
+            --font-heading: 'Outfit', sans-serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+            --grad-primary: linear-gradient(135deg, #1b4332 0%, #081c15 100%);
+            --radius-md: 24px;
+        }
+
+        body.lang-en [data-lang="tr"] {
+            display: none !important;
+        }
+        body.lang-tr [data-lang="en"] {
+            display: none !important;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--grad-primary);
+            color: var(--white);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Ambient glowing background blur */
+        .ambient-blur {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: var(--accent);
+            opacity: 0.15;
+            filter: blur(120px);
+            border-radius: 50%;
+            top: 10%;
+            left: 10%;
+            z-index: 1;
+        }
+
+        .ambient-blur-2 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: var(--primary-light);
+            opacity: 0.2;
+            filter: blur(120px);
+            border-radius: 50%;
+            bottom: 10%;
+            right: 10%;
+            z-index: 1;
+        }
+
+        .success-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-md);
+            padding: 50px 40px;
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+            transform: translateY(20px);
+            animation: slideIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        .success-icon-wrapper {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--accent) 0%, #e9c46a 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px auto;
+            box-shadow: 0 10px 30px rgba(212, 163, 115, 0.3);
+            animation: bounceIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        .success-icon-wrapper i {
+            font-size: 3rem;
+            color: var(--primary);
+        }
+
+        .success-title {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        .success-desc {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: var(--accent);
+            color: var(--primary);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 16px 36px;
+            border-radius: 9999px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(212, 163, 115, 0.2);
+        }
+
+        .btn:hover {
+            background-color: var(--white);
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover i {
+            transform: translateX(-5px);
+        }
+
+        @keyframes slideIn {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+            70% {
+                transform: scale(0.9);
+                opacity: 0.9;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .success-card {
+                padding: 40px 24px;
+            }
+            .success-title {
+                font-size: 1.6rem;
+            }
+            .success-desc {
+                font-size: 0.95rem;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="lang-tr">
+    <div class="ambient-blur"></div>
+    <div class="ambient-blur-2"></div>
+
+    <div class="success-card">
+        <div class="success-icon-wrapper">
+            <i class="fa-solid fa-tree"></i>
+        </div>
+        
+        <h1 class="success-title">
+            <span data-lang="tr">Talebiniz Başarıyla Alındı!</span>
+            <span data-lang="en">Reservation Request Received!</span>
+        </h1>
+        
+        <p class="success-desc">
+            <span data-lang="tr">Doğa sevgisi ve macera dolu bu serüven için ilk adımı attınız. Ekibimiz en kısa sürede sizinle iletişime geçerek rezervasyon detaylarınızı doğrulayacaktır.</span>
+            <span data-lang="en">You've taken the first step toward this nature and adventure-filled journey. Our team will contact you shortly to confirm your booking details.</span>
+        </p>
+
+        <a href="index.html" class="btn">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span data-lang="tr">Ana Sayfaya Dön</span>
+            <span data-lang="en">Return to Homepage</span>
+        </a>
+    </div>
+
+    <script>
+        // Synchronize language preference from localStorage
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferred-lang') || 'tr';
+            if (savedLang === 'en') {
+                document.body.classList.remove('lang-tr');
+                document.body.classList.add('lang-en');
+            } else {
+                document.body.classList.remove('lang-en');
+                document.body.classList.add('lang-tr');
+            }
+        });
+    </script>
+</body>
+</html>
