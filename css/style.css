@@ -1578,3 +1578,38 @@ a.info-value:hover {
         padding: 32px 24px;
     }
 }
+
+/* --- MOBILE RESPONSIVENESS REFINEMENTS (XS DEVICES) --- */
+@media (max-width: 480px) {
+    :root {
+        --header-height: 80px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .logo-title {
+        font-size: 1.1rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 0.75rem;
+    }
+    
+    .about-section,
+    .camps-section,
+    .activities-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+    
+    .hero-content {
+        padding: 0 16px;
+    }
+    
+    .camp-card,
+    .activity-card {
+        border-radius: var(--radius-md);
+    }
+}
