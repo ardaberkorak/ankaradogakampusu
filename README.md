@@ -41,10 +41,10 @@ ankaradogakampusu/
 ├── js/
 │   └── main.js            # Dil değiştirici ve interaktif menü kodları
 ├── images/
-│   ├── hero-bg.png        # Giriş alanı arka plan görseli
-│   ├── about-main.png     # Hakkımızda ana görseli
-│   ├── about-sub.png      # Hakkımızda dekoratif ikinci görsel
-│   └── camp-summer.png    # Yaz kampı tanıtım görseli
+│   ├── hero-bg.webp        # Giriş alanı arka plan görseli
+│   ├── about-main.webp     # Hakkımızda ana görseli
+│   ├── about-sub.webp      # Hakkımızda dekoratif ikinci görsel
+│   └── camp-summer.webp    # Yaz kampı tanıtım görseli
 ├── index.html             # Ana HTML5 belgesi
 ├── success.html           # Form gönderim başarı sayfası
 └── README.md              # Proje dökümantasyonu
@@ -60,9 +60,9 @@ Web sitesine aşağıdaki canlı bağlantı üzerinden ulaşabilirsiniz:
 
 ## 📸 Ekran Görüntüleri ve Tasarım Varlıkları
 Projeye ait tasarım ve görsel varlıklar `images/` dizini altında saklanmaktadır. Projenin ana görselini oluşturan önemli varlıklar:
-* **Giriş Alanı Arka Planı:** `images/hero-bg.png`
-* **Hakkımızda Görsel Mozaiği:** `images/about-main.png` & `images/about-sub.png`
-* **Kamplar Görseli:** `images/camp-summer.png`
+* **Giriş Alanı Arka Planı:** `images/hero-bg.webp`
+* **Hakkımızda Görsel Mozaiği:** `images/about-main.webp` & `images/about-sub.webp`
+* **Kamplar Görseli:** `images/camp-summer.webp`
 
 ---
 
