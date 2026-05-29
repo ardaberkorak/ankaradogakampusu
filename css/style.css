@@ -817,3 +817,188 @@ body.lang-en [data-lang="tr"] {
         font-size: 2rem;
     }
 }
+
+/* --- CAMPS SECTION --- */
+.camps-section {
+    padding: 120px 0;
+    background-color: var(--bg-light);
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.max-600 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.camps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 60px;
+}
+
+/* Camp Card Design */
+.camp-card {
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(241, 245, 249, 0.8);
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-smooth);
+}
+
+.camp-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+    border-color: transparent;
+}
+
+.camp-img-wrapper {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.camp-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-smooth);
+}
+
+.camp-card:hover .camp-img {
+    transform: scale(1.06);
+}
+
+.camp-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--accent-hover);
+    color: var(--text-dark);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: var(--shadow-sm);
+    z-index: 10;
+}
+
+.camp-badge.bg-accent-tag {
+    background: var(--grad-accent);
+}
+
+.camp-badge.bg-primary-tag {
+    background: var(--grad-primary);
+    color: var(--white);
+}
+
+/* Card Content Body */
+.camp-body {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+}
+
+.camp-meta {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid rgba(241, 245, 249, 0.9);
+    padding-bottom: 16px;
+}
+
+.camp-meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.camp-meta-item i {
+    color: var(--primary-light);
+    font-size: 1rem;
+}
+
+.camp-title {
+    font-size: 1.35rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.camp-text {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Card Footer System */
+.camp-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(241, 245, 249, 0.9);
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.camp-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.price-amount {
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: var(--primary-light);
+}
+
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+}
+
+/* --- CAMPS RESPONSIVENESS --- */
+@media (max-width: 1024px) {
+    .camps-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .camps-section {
+        padding: 80px 0;
+    }
+    
+    .camps-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        max-width: 500px;
+        margin: 40px auto 0 auto;
+    }
+}
