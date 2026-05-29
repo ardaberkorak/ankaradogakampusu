@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('main-header');
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const mobileNav = document.getElementById('mobile-nav');
-    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-actions .btn');
 
     // 1. Scroll Effect for Sticky Header
     const handleScroll = () => {
