@@ -97,4 +97,48 @@ document.addEventListener('DOMContentLoaded', () => {
         const newLang = currentLang === 'tr' ? 'en' : 'tr';
         setLanguage(newLang);
     });
+
+    // 6. Contact Form AJAX Submission with Local Redirection
+    const bookingForm = document.getElementById('booking-form');
+    if (bookingForm) {
+        bookingForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const submitBtn = bookingForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = document.body.classList.contains('lang-en') 
+                ? '<i class="fa-solid fa-spinner fa-spin"></i> Sending...' 
+                : '<i class="fa-solid fa-spinner fa-spin"></i> Gönderiliyor...';
+            
+            try {
+                const formData = new FormData(bookingForm);
+                const response = await fetch(bookingForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // Redirect to local success.html
+                    window.location.href = 'success.html';
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                alert(document.body.classList.contains('lang-en')
+                    ? 'An error occurred. Please try again or contact us directly.'
+                    : 'Bir hata oluştu. Lütfen tekrar deneyin veya doğrudan bizimle iletişime geçin.');
+                
+                // Restore button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            }
+        });
+    }
 });
