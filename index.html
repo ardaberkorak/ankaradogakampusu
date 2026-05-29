@@ -596,6 +596,256 @@
         </div>
     </section>
 
+    <!-- Contact / Booking Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span data-lang="tr">İletişim & Rezervasyon</span>
+                    <span data-lang="en">Contact & Booking</span>
+                </span>
+                <h2 class="section-title">
+                    <span data-lang="tr">Doğaya İlk Adımı Atın</span>
+                    <span data-lang="en">Take Your First Step Into Nature</span>
+                </h2>
+                <p class="section-desc max-600">
+                    <span data-lang="tr">Kamp rezervasyonu, detaylı bilgi veya her türlü sorunuz için formumuzu doldurabilir ya da bizimle doğrudan iletişime geçebilirsiniz.</span>
+                    <span data-lang="en">Fill out our form for camp booking, detailed inquiries, or any questions, or reach out to us directly.</span>
+                </p>
+            </div>
+
+            <div class="contact-grid" id="booking">
+                <!-- Column 1: Info Box -->
+                <div class="contact-info-col">
+                    <div class="info-card">
+                        <h3 class="info-card-title">
+                            <span data-lang="tr">İletişim Bilgilerimiz</span>
+                            <span data-lang="en">Contact Information</span>
+                        </h3>
+                        <p class="info-card-desc">
+                            <span data-lang="tr">Kampüsümüz haftanın her günü doğa severleri ağırlamak için hizmetinizdedir.</span>
+                            <span data-lang="en">Our campus is open every day of the week to welcome nature lovers.</span>
+                        </p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span class="info-label">
+                                        <span data-lang="tr">Adres</span>
+                                        <span data-lang="en">Address</span>
+                                    </span>
+                                    <span class="info-value">Kızılcahamam Doğa Vadisi, Ankara, Türkiye</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span class="info-label">
+                                        <span data-lang="tr">Telefon</span>
+                                        <span data-lang="en">Phone</span>
+                                    </span>
+                                    <a href="tel:+903125550000" class="info-value">+90 (312) 555 0000</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span class="info-label">
+                                        <span data-lang="tr">E-posta</span>
+                                        <span data-lang="en">Email</span>
+                                    </span>
+                                    <a href="mailto:bilgi@ankaradogakampusu.com" class="info-value">bilgi@ankaradogakampusu.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="social-links-wrapper">
+                            <h4 class="social-title">
+                                <span data-lang="tr">Bizi Takip Edin</span>
+                                <span data-lang="en">Follow Us</span>
+                            </h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Working Web3Forms / Formspree Form -->
+                <div class="contact-form-col">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="booking-form" id="booking-form">
+                        <!-- Replace with a public access key for Web3Forms demo -->
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parent_name">
+                                    <span data-lang="tr">Veli Adı Soyadı *</span>
+                                    <span data-lang="en">Parent's Full Name *</span>
+                                </label>
+                                <input type="text" id="parent_name" name="parent_name" required placeholder="Örn: Ahmet Yılmaz">
+                            </div>
+                            <div class="form-group">
+                                <label for="child_name">
+                                    <span data-lang="tr">Katılımcı (Çocuk) Adı Soyadı *</span>
+                                    <span data-lang="en">Participant (Child) Name *</span>
+                                </label>
+                                <input type="text" id="child_name" name="child_name" required placeholder="Örn: Can Yılmaz">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    <span data-lang="tr">E-posta Adresi *</span>
+                                    <span data-lang="en">Email Address *</span>
+                                </label>
+                                <input type="email" id="email" name="email" required placeholder="ahmet@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">
+                                    <span data-lang="tr">Telefon Numarası *</span>
+                                    <span data-lang="en">Phone Number *</span>
+                                </label>
+                                <input type="tel" id="phone" name="phone" required placeholder="0 (555) 000 0000">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="camp_select">
+                                    <span data-lang="tr">Kamp Tercihi *</span>
+                                    <span data-lang="en">Select Camp *</span>
+                                </label>
+                                <select id="camp_select" name="camp_select" required>
+                                    <option value="" disabled selected data-lang="tr">Seçiniz...</option>
+                                    <option value="" disabled selected data-lang="en">Choose...</option>
+                                    <option value="yaz-kampi" data-lang="tr">Yaz Keşif Kampı (7-12 Yaş)</option>
+                                    <option value="yaz-kampi" data-lang="en">Summer Discovery Camp (Ages 7-12)</option>
+                                    <option value="aile-kampi" data-lang="tr">Hafta Sonu Aile Kampı (Her Yaş)</option>
+                                    <option value="aile-kampi" data-lang="en">Weekend Family Camp (All Ages)</option>
+                                    <option value="kis-kampi" data-lang="tr">Kış Macera Kampı (12-17 Yaş)</option>
+                                    <option value="kis-kampi" data-lang="en">Winter Adventure Camp (Ages 12-17)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <span data-lang="tr">Eklemek İstediğiniz Notlar</span>
+                                <span data-lang="en">Additional Notes</span>
+                            </label>
+                            <textarea id="message" name="message" rows="4" placeholder="Sağlık durumu, alerji veya ek istekleriniz..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-accent btn-full">
+                            <span data-lang="tr">Rezervasyon Talebi Gönder</span>
+                            <span data-lang="en">Submit Booking Request</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Col 1: About -->
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo footer-logo">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-tree"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">ANKARA DOĞA</span>
+                            <span class="logo-subtitle">KAMPÜSÜ</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        <span data-lang="tr">Çocuklarımızı doğanın kucağında, geleceğe güvenle hazırlayan, macera ve eğitim dolu premium kamp deneyimi.</span>
+                        <span data-lang="en">Premium camp experience filled with adventure and education, preparing children for the future in the heart of nature.</span>
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="footer-col links-col">
+                    <h4 class="footer-title">
+                        <span data-lang="tr">Hızlı Menü</span>
+                        <span data-lang="en">Quick Links</span>
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><span data-lang="tr">Ana Sayfa</span><span data-lang="en">Home</span></a></li>
+                        <li><a href="#about"><span data-lang="tr">Hakkımızda</span><span data-lang="en">About Us</span></a></li>
+                        <li><a href="#camps"><span data-lang="tr">Kamplarımız</span><span data-lang="en">Our Camps</span></a></li>
+                        <li><a href="#activities"><span data-lang="tr">Etkinlikler</span><span data-lang="en">Activities</span></a></li>
+                        <li><a href="#gallery"><span data-lang="tr">Galeri</span><span data-lang="en">Gallery</span></a></li>
+                        <li><a href="#contact"><span data-lang="tr">İletişim</span><span data-lang="en">Contact</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Academic Credits -->
+                <div class="footer-col credits-col">
+                    <h4 class="footer-title">
+                        <span data-lang="tr">Akademik Bilgi</span>
+                        <span data-lang="en">Academic Info</span>
+                    </h4>
+                    <ul class="footer-info-list">
+                        <li>
+                            <strong>
+                                <span data-lang="tr">Ders:</span>
+                                <span data-lang="en">Course:</span>
+                            </strong> 
+                            İleri Web Tasarımı (2025-2026)
+                        </li>
+                        <li>
+                            <strong>
+                                <span data-lang="tr">Danışman:</span>
+                                <span data-lang="en">Advisor:</span>
+                            </strong> 
+                            Öğr. Gör. Ahmet AVCIOĞLU
+                        </li>
+                        <li>
+                            <strong>
+                                <span data-lang="tr">Geliştirici:</span>
+                                <span data-lang="en">Developer:</span>
+                            </strong> 
+                            Arda Berk Orak
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    &copy; 2026 Ankara Doğa Kampüsü. 
+                    <span data-lang="tr">Tüm Hakları Saklıdır.</span>
+                    <span data-lang="en">All Rights Reserved.</span>
+                </p>
+                <p class="academic-note">
+                    <span data-lang="tr">Bu web sitesi İleri Web Tasarımı Final Ödevi kapsamında eğitim amaçlı tasarlanmıştır.</span>
+                    <span data-lang="en">This website was developed as an educational final project for Advanced Web Design.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
