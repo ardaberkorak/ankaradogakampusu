@@ -1534,6 +1534,84 @@ a.info-value:hover {
     text-align: right;
 }
 
+/* --- BBQ SECTION --- */
+.bbq-section {
+    padding: 120px 0;
+    background-color: var(--bg-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.bbq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.bbq-image-col {
+    position: relative;
+}
+
+.bbq-image-wrapper {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 1 / 1;
+}
+
+.bbq-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-smooth);
+}
+
+.bbq-image-wrapper:hover .bbq-img {
+    transform: scale(1.05);
+}
+
+.bbq-features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.bbq-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.bbq-feature-item i {
+    color: var(--primary-light);
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+@media (max-width: 1024px) {
+    .bbq-grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .bbq-section {
+        padding: 80px 0;
+    }
+    .bbq-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .bbq-image-wrapper {
+        aspect-ratio: 16 / 9;
+    }
+}
+
 /* --- CONTACT & FOOTER RESPONSIVENESS --- */
 @media (max-width: 992px) {
     .contact-grid {
@@ -1600,6 +1678,7 @@ a.info-value:hover {
     .about-section,
     .camps-section,
     .activities-section,
+    .bbq-section,
     .contact-section {
         padding: 60px 0;
     }
