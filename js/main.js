@@ -141,4 +141,41 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 7. Dark Mode Logic
+    const darkModeBtn = document.getElementById('dark-mode-btn');
+    const darkModeIcon = darkModeBtn.querySelector('i');
+
+    const enableDarkMode = () => {
+        document.body.classList.add('dark-mode');
+        darkModeIcon.classList.remove('fa-moon');
+        darkModeIcon.classList.add('fa-sun');
+        localStorage.setItem('dark-mode', 'enabled');
+    };
+
+    const disableDarkMode = () => {
+        document.body.classList.remove('dark-mode');
+        darkModeIcon.classList.remove('fa-sun');
+        darkModeIcon.classList.add('fa-moon');
+        localStorage.setItem('dark-mode', 'disabled');
+    };
+
+    // Load preferred mode
+    const savedDarkMode = localStorage.getItem('dark-mode');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedDarkMode === 'enabled' || (!savedDarkMode && systemPrefersDark)) {
+        enableDarkMode();
+    } else {
+        disableDarkMode();
+    }
+
+    darkModeBtn.addEventListener('click', () => {
+        const isDark = document.body.classList.contains('dark-mode');
+        if (isDark) {
+            disableDarkMode();
+        } else {
+            enableDarkMode();
+        }
+    });
 });
