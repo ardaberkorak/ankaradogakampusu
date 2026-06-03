@@ -118,9 +118,19 @@ document.addEventListener('DOMContentLoaded', () => {
         setLanguage(newLang);
     });
 
-    // 6. Contact Form AJAX Submission with Local Redirection
+    // 6. Contact Form AJAX Submission with Local Redirection and URL parameter pre-selection
     const bookingForm = document.getElementById('booking-form');
     if (bookingForm) {
+        // Pre-select camp from URL query parameter (e.g. ?camp=mangal-hizmeti)
+        const urlParams = new URLSearchParams(window.location.search);
+        const campParam = urlParams.get('camp');
+        if (campParam) {
+            const campSelect = document.getElementById('camp_select');
+            if (campSelect) {
+                campSelect.value = campParam;
+            }
+        }
+
         bookingForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             
