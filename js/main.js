@@ -49,18 +49,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
 
+    let sectionData = [];
+    const cacheSectionGeometry = () => {
+        sectionData = Array.from(sections).map(section => ({
+            id: section.getAttribute('id'),
+            top: section.offsetTop,
+            height: section.offsetHeight
+        }));
+    };
+
+    // Cache geometry on load and resize
+    cacheSectionGeometry();
+    window.addEventListener('resize', cacheSectionGeometry);
+
     window.addEventListener('scroll', () => {
         let currentSectionId = '';
-        const scrollPosition = window.scrollY + 120; // offset for sticky header
+        const scrollPosition = window.scrollY + 130; // offset for sticky header
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-
-            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                currentSectionId = section.getAttribute('id');
+        for (const section of sectionData) {
+            if (scrollPosition >= section.top && scrollPosition < section.top + section.height) {
+                currentSectionId = section.id;
+                break;
             }
-        });
+        }
 
         navLinks.forEach(link => {
             link.classList.remove('active');
