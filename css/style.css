@@ -615,7 +615,7 @@ body.lang-en [data-lang="tr"] {
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 0.85rem;
-    color: var(--primary-light);
+    color: var(--primary);
     background-color: var(--primary-ultra-light);
     padding: 6px 16px;
     border-radius: var(--radius-full);
@@ -1339,8 +1339,8 @@ a.info-value:hover {
 }
 
 .social-link {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: var(--radius-full);
     border: 1px solid rgba(255, 255, 255, 0.15);
     display: flex;

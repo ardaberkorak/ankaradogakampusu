@@ -25,11 +25,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/image.png">
+    <!-- LCP Image Preload -->
+    <link rel="preload" href="images/hero-bg.webp" as="image" type="image/webp">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Custom JS -->
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 
@@ -37,7 +42,7 @@
     <header class="main-header" id="main-header">
         <div class="container header-container">
             <a href="#" class="logo" id="header-logo">
-                <img src="images/image.png" alt="Ankara Doğa Kampüsü" style="height: 50px; width: auto;">
+                <img src="images/image.png" alt="Ankara Doğa Kampüsü" width="50" height="50" style="height: 50px; width: 50px;" loading="eager" fetchpriority="high">
                 <div class="logo-text">
                     <span class="logo-title">ANKARA DOĞA</span>
                     <span class="logo-subtitle">KAMPÜSÜ</span>
@@ -81,16 +86,16 @@
 
             <div class="header-actions">
                 <button class="dark-mode-btn" id="dark-mode-btn" aria-label="Karanlık Mod / Dark Mode">
-                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
                 </button>
                 <button class="lang-switch-btn" id="lang-switch-btn" aria-label="Dili Değiştir / Switch Language">
                     <span class="lang-text">TR</span>
-                    <i class="fa-solid fa-globe"></i>
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
                 </button>
                 <a href="#booking" class="btn btn-primary btn-header">
                     <span data-lang="tr">Rezervasyon</span>
                     <span data-lang="en">Book Now</span>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </a>
                 <button class="hamburger-btn" id="hamburger-btn" aria-label="Menüyü Aç">
                     <span class="line line-1"></span>
@@ -149,7 +154,7 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <span class="hero-badge">
-                    <i class="fa-solid fa-compass"></i>
+                    <i class="fa-solid fa-compass" aria-hidden="true"></i>
                     <span data-lang="tr">Doğanın Kucağında Yeni Bir Macera</span>
                     <span data-lang="en">A New Adventure in the Heart of Nature</span>
                 </span>
@@ -183,10 +188,10 @@
                 <div class="about-images-col">
                     <div class="image-mosaic">
                         <div class="mosaic-item main-img-wrapper">
-                            <img src="images/about-main.webp" alt="Doğada keşif yapan çocuklar" class="mosaic-img main-img" loading="lazy">
+                            <img src="images/about-main.webp" alt="Doğada keşif yapan çocuklar" class="mosaic-img main-img" width="727" height="909" loading="lazy">
                         </div>
                         <div class="mosaic-item sub-img-wrapper">
-                            <img src="images/about-sub.webp" alt="Ormanda kamp çadırı" class="mosaic-img sub-img" loading="lazy">
+                            <img src="images/about-sub.webp" alt="Ormanda kamp çadırı" class="mosaic-img sub-img" width="511" height="292" loading="lazy">
                         </div>
                         <div class="deco-box"></div>
                     </div>
@@ -195,7 +200,7 @@
                 <!-- Column 2: Rich Content -->
                 <div class="about-content-col">
                     <span class="section-badge">
-                        <i class="fa-solid fa-seedling"></i>
+                        <i class="fa-solid fa-seedling" aria-hidden="true"></i>
                         <span data-lang="tr">Biz Kimiz?</span>
                         <span data-lang="en">Who Are We?</span>
                     </span>
@@ -212,7 +217,7 @@
                     <div class="about-features">
                         <div class="feature-item">
                             <div class="feature-icon">
-                                <i class="fa-solid fa-shield-halved"></i>
+                                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
                             </div>
                             <div class="feature-text">
                                 <h3 class="feature-title">
@@ -228,7 +233,7 @@
 
                         <div class="feature-item">
                             <div class="feature-icon">
-                                <i class="fa-solid fa-leaf"></i>
+                                <i class="fa-solid fa-leaf" aria-hidden="true"></i>
                             </div>
                             <div class="feature-text">
                                 <h3 class="feature-title">
@@ -244,7 +249,7 @@
 
                         <div class="feature-item">
                             <div class="feature-icon">
-                                <i class="fa-solid fa-people-group"></i>
+                                <i class="fa-solid fa-people-group" aria-hidden="true"></i>
                             </div>
                             <div class="feature-text">
                                 <h3 class="feature-title">
@@ -268,7 +273,7 @@
         <div class="container">
             <div class="section-header text-center">
                 <span class="section-badge">
-                    <i class="fa-solid fa-tent"></i>
+                    <i class="fa-solid fa-tent" aria-hidden="true"></i>
                     <span data-lang="tr">Macera Başlıyor</span>
                     <span data-lang="en">Adventure Awaits</span>
                 </span>
@@ -286,7 +291,7 @@
                 <!-- Card 1: Yaz Kampı -->
                 <div class="camp-card">
                     <div class="camp-img-wrapper">
-                        <img src="images/camp-summer.webp" alt="Yaz Kampı Ateş Başında Çocuklar" class="camp-img" loading="lazy">
+                        <img src="images/camp-summer.webp" alt="Yaz Kampı Ateş Başında Çocuklar" class="camp-img" width="914" height="913" loading="lazy">
                         <span class="camp-badge">
                             <span data-lang="tr">Popüler</span>
                             <span data-lang="en">Popular</span>
@@ -295,12 +300,12 @@
                     <div class="camp-body">
                         <div class="camp-meta">
                             <span class="camp-meta-item">
-                                <i class="fa-solid fa-child"></i>
+                                <i class="fa-solid fa-child" aria-hidden="true"></i>
                                 <span data-lang="tr">7-12 Yaş</span>
                                 <span data-lang="en">Ages 7-12</span>
                             </span>
                             <span class="camp-meta-item">
-                                <i class="fa-solid fa-clock"></i>
+                                <i class="fa-solid fa-clock" aria-hidden="true"></i>
                                 <span data-lang="tr">5 Gün</span>
                                 <span data-lang="en">5 Days</span>
                             </span>
@@ -325,7 +330,7 @@
                 <!-- Card 2: Hafta Sonu Aile Kampı -->
                 <div class="camp-card">
                     <div class="camp-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1537905569824-f89f14cceb68?auto=format&fit=crop&w=600&q=80" alt="Hafta sonu doğa kampı çadırlar" class="camp-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1537905569824-f89f14cceb68?auto=format&fit=crop&w=600&q=80" alt="Hafta sonu doğa kampı çadırlar" class="camp-img" width="600" height="400" loading="lazy">
                         <span class="camp-badge bg-accent-tag">
                             <span data-lang="tr">Aile Boyu</span>
                             <span data-lang="en">Family</span>
@@ -334,12 +339,12 @@
                     <div class="camp-body">
                         <div class="camp-meta">
                             <span class="camp-meta-item">
-                                <i class="fa-solid fa-people-roof"></i>
+                                <i class="fa-solid fa-people-roof" aria-hidden="true"></i>
                                 <span data-lang="tr">Her Yaş</span>
                                 <span data-lang="en">All Ages</span>
                             </span>
                             <span class="camp-meta-item">
-                                <i class="fa-solid fa-clock"></i>
+                                <i class="fa-solid fa-clock" aria-hidden="true"></i>
                                 <span data-lang="tr">2 Gün</span>
                                 <span data-lang="en">2 Days</span>
                             </span>
@@ -364,7 +369,7 @@
                 <!-- Card 3: Kış Macera Kampı -->
                 <div class="camp-card">
                     <div class="camp-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1482862549707-f63cb32c5fd9?auto=format&fit=crop&w=600&q=80" alt="Kış kampı kar altında çadır" class="camp-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1482862549707-f63cb32c5fd9?auto=format&fit=crop&w=600&q=80" alt="Kış kampı kar altında çadır" class="camp-img" width="600" height="400" loading="lazy">
                         <span class="camp-badge bg-primary-tag">
                             <span data-lang="tr">Yeni</span>
                             <span data-lang="en">New</span>
@@ -373,12 +378,12 @@
                     <div class="camp-body">
                         <div class="camp-meta">
                             <span class="camp-meta-item">
-                                <i class="fa-solid fa-child"></i>
+                                <i class="fa-solid fa-child" aria-hidden="true"></i>
                                 <span data-lang="tr">12-17 Yaş</span>
                                 <span data-lang="en">Ages 12-17</span>
                             </span>
                             <span class="camp-meta-item">
-                                <i class="fa-solid fa-clock"></i>
+                                <i class="fa-solid fa-clock" aria-hidden="true"></i>
                                 <span data-lang="tr">4 Gün</span>
                                 <span data-lang="en">4 Days</span>
                             </span>
@@ -408,7 +413,7 @@
         <div class="container">
             <div class="section-header text-center">
                 <span class="section-badge">
-                    <i class="fa-solid fa-compass"></i>
+                    <i class="fa-solid fa-compass" aria-hidden="true"></i>
                     <span data-lang="tr">Eğlenceli Eğitim</span>
                     <span data-lang="en">Fun Education</span>
                 </span>
@@ -426,7 +431,7 @@
                 <!-- Activity 1 -->
                 <div class="activity-card">
                     <div class="activity-icon">
-                        <i class="fa-solid fa-mountain-sun"></i>
+                        <i class="fa-solid fa-mountain-sun" aria-hidden="true"></i>
                     </div>
                     <h3 class="activity-title">
                         <span data-lang="tr">Kaya Tırmanışı</span>
@@ -441,7 +446,7 @@
                 <!-- Activity 2 -->
                 <div class="activity-card">
                     <div class="activity-icon">
-                        <i class="fa-solid fa-bullseye"></i>
+                        <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
                     </div>
                     <h3 class="activity-title">
                         <span data-lang="tr">Okçuluk Eğitimi</span>
@@ -456,7 +461,7 @@
                 <!-- Activity 3 -->
                 <div class="activity-card">
                     <div class="activity-icon">
-                        <i class="fa-solid fa-map-location-dot"></i>
+                        <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
                     </div>
                     <h3 class="activity-title">
                         <span data-lang="tr">Hedef Bulma (Oriyantiring)</span>
@@ -471,7 +476,7 @@
                 <!-- Activity 4 -->
                 <div class="activity-card">
                     <div class="activity-icon">
-                        <i class="fa-solid fa-palette"></i>
+                        <i class="fa-solid fa-palette" aria-hidden="true"></i>
                     </div>
                     <h3 class="activity-title">
                         <span data-lang="tr">Doğa Sanat Atölyesi</span>
@@ -493,14 +498,14 @@
                 <!-- Column 1: Image -->
                 <div class="bbq-image-col">
                     <div class="bbq-image-wrapper">
-                        <img src="images/mangal-hizmeti.png" alt="Doğada Mangal Keyfi" class="bbq-img" loading="lazy">
+                        <img src="images/mangal-hizmeti.png" alt="Doğada Mangal Keyfi" class="bbq-img" width="1024" height="1024" loading="lazy">
                     </div>
                 </div>
 
                 <!-- Column 2: Content -->
                 <div class="bbq-content-col">
                     <span class="section-badge">
-                        <i class="fa-solid fa-fire"></i>
+                        <i class="fa-solid fa-fire" aria-hidden="true"></i>
                         <span data-lang="tr">Premium Hizmet</span>
                         <span data-lang="en">Premium Service</span>
                     </span>
@@ -515,7 +520,7 @@
 
                     <div class="bbq-features">
                         <div class="bbq-feature-item">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                             <span>
                                 <strong data-lang="tr">Kaliteli Malzemeler:</strong>
                                 <span data-lang="tr"> Taze ve güvenilir yerel üreticilerden temin edilen ürünler.</span>
@@ -524,7 +529,7 @@
                             </span>
                         </div>
                         <div class="bbq-feature-item">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                             <span>
                                 <strong data-lang="tr">Özel Ekipmanlar:</strong>
                                 <span data-lang="tr"> Her aileye ve gruba özel, temizliği yapılmış profesyonel mangal üniteleri.</span>
@@ -533,7 +538,7 @@
                             </span>
                         </div>
                         <div class="bbq-feature-item">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                             <span>
                                 <strong data-lang="tr">Doğa Dostu Konsept:</strong>
                                 <span data-lang="tr"> Çevreye zarar vermeyen, özel izole edilmiş emniyetli mangal alanları.</span>
@@ -552,7 +557,7 @@
         <div class="container">
             <div class="section-header text-center">
                 <span class="section-badge">
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                     <span data-lang="tr">İletişim & Rezervasyon</span>
                     <span data-lang="en">Contact & Booking</span>
                 </span>
@@ -582,7 +587,7 @@
                         <div class="info-list">
                             <div class="info-item">
                                 <div class="info-icon">
-                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
                                 </div>
                                 <div class="info-text">
                                     <span class="info-label">
@@ -595,7 +600,7 @@
 
                             <div class="info-item">
                                 <div class="info-icon">
-                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
                                 </div>
                                 <div class="info-text">
                                     <span class="info-label">
@@ -614,7 +619,7 @@
                                 <span data-lang="en">Follow Us</span>
                             </h4>
                             <div class="social-links">
-                                <a href="https://www.instagram.com/ankaradogakampusu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/ankaradogakampusu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -692,7 +697,7 @@
                         <button type="submit" class="btn btn-accent btn-full">
                             <span data-lang="tr">Rezervasyon Talebi Gönder</span>
                             <span data-lang="en">Submit Booking Request</span>
-                            <i class="fa-solid fa-paper-plane"></i>
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
                         </button>
                     </form>
                 </div>
@@ -708,7 +713,7 @@
                 <div class="footer-col brand-col">
                     <a href="#" class="logo footer-logo">
                         <div class="logo-icon">
-                            <i class="fa-solid fa-tree"></i>
+                            <i class="fa-solid fa-tree" aria-hidden="true"></i>
                         </div>
                         <div class="logo-text">
                             <span class="logo-title">ANKARA DOĞA</span>
@@ -783,7 +788,5 @@
         </div>
     </footer>
 
-    <!-- Custom JS -->
-    <script src="js/main.js"></script>
 </body>
 </html>
