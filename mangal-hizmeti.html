@@ -91,7 +91,7 @@
                     <span class="lang-text">TR</span>
                     <i class="fa-solid fa-globe" aria-hidden="true"></i>
                 </button>
-                <a href="iletisim.html?camp=mangal-hizmeti#booking" class="btn btn-primary btn-header">
+                <a href="#booking" class="btn btn-primary btn-header">
                     <span data-lang="tr">Rezervasyon</span>
                     <span data-lang="en">Book Now</span>
                     <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
@@ -146,7 +146,7 @@
             </li>
         </ul>
         <div class="mobile-nav-actions">
-            <a href="iletisim.html?camp=mangal-hizmeti#booking" class="btn btn-accent btn-full">
+            <a href="#booking" class="btn btn-accent btn-full">
                 <span data-lang="tr">Rezervasyon Yap</span>
                 <span data-lang="en">Book a Spot</span>
             </a>
@@ -234,105 +234,154 @@
         </div>
     </section>
 
-    <!-- BBQ Packages Section -->
-    <section class="bbq-packages-section" style="padding: 80px 0; background: var(--bg-light); border-top: 1px solid rgba(0,0,0,0.05);">
+    <!-- Contact / Booking Section -->
+    <section id="contact" class="contact-section" style="background: var(--bg-light); border-top: 1px solid rgba(0,0,0,0.05);">
         <div class="container">
-            <div class="section-header text-center" style="margin-bottom: 50px;">
+            <div class="section-header text-center">
                 <span class="section-badge">
-                    <i class="fa-solid fa-utensils" aria-hidden="true"></i>
-                    <span data-lang="tr">Paket Seçenekleri</span>
-                    <span data-lang="en">Package Options</span>
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <span data-lang="tr">İletişim & Rezervasyon</span>
+                    <span data-lang="en">Contact & Booking</span>
                 </span>
                 <h2 class="section-title">
-                    <span data-lang="tr">Mangal Paketlerimiz</span>
-                    <span data-lang="en">Our BBQ Packages</span>
+                    <span data-lang="tr">Mangal Rezervasyonu Yapın</span>
+                    <span data-lang="en">Book Your BBQ Spot</span>
                 </h2>
                 <p class="section-desc max-600">
-                    <span data-lang="tr">Size en uygun mangal deneyimini seçin; ister malzemelerinizi kendiniz getirin, ister şeflerimizin sunumunun tadını çıkarın.</span>
-                    <span data-lang="en">Choose the BBQ experience that suits you best; bring your own ingredients or enjoy our chef's signature grill.</span>
+                    <span data-lang="tr">Kendin pişir kendin ye konseptli mangal alanımızda yerinizi ayırtmak için formumuzu doldurabilir ya da bizimle doğrudan iletişime geçebilirsiniz.</span>
+                    <span data-lang="en">Fill out the form to reserve your spot in our DIY barbecue area, or reach out to us directly.</span>
                 </p>
             </div>
 
-            <div class="camps-grid">
-                <!-- Package 1: DIY -->
-                <div class="camp-card">
-                    <div class="camp-img-wrapper" style="height: 220px; overflow: hidden; position: relative;">
-                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Kendin Pisir Kendin Ye" class="camp-img" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-                        <span class="camp-badge bg-primary-tag">
-                            <span data-lang="tr">Klasik</span>
-                            <span data-lang="en">Classic</span>
-                        </span>
-                    </div>
-                    <div class="camp-body" style="padding: 24px;">
-                        <h3 class="camp-title" style="margin-bottom: 12px; font-size: 1.4rem;">
-                            <span data-lang="tr">Kendin Pişir Kendin Ye</span>
-                            <span data-lang="en">DIY BBQ Experience</span>
+            <div class="contact-grid" id="booking">
+                <!-- Column 1: Info Box -->
+                <div class="contact-info-col">
+                    <div class="info-card">
+                        <h3 class="info-card-title">
+                            <span data-lang="tr">İletişim Bilgilerimiz</span>
+                            <span data-lang="en">Contact Information</span>
                         </h3>
-                        <p class="camp-text" style="font-size: 0.95rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 20px;">
-                            <span data-lang="tr">Kendi etinizi ve malzemelerinizi getirdiğiniz bu seçenekte; temizliği yapılmış mangal ünitesi, odun/kömür, yelleç, maşa ve temel servis gereçleri kampımız tarafından sağlanır.</span>
-                            <span data-lang="en">Bring your own ingredients; we provide a clean professional BBQ unit, charcoal/firewood, tongs, bellows, and essential dining utensils at your reserved area.</span>
+                        <p class="info-card-desc">
+                            <span data-lang="tr">Kampüsümüz haftanın her günü doğa severleri ağırlamak için hizmetinizdedir.</span>
+                            <span data-lang="en">Our campus is open every day of the week to welcome nature lovers.</span>
                         </p>
-                        <div class="camp-footer" style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 15px;">
-                            <a href="iletisim.html?camp=mangal-hizmeti#booking" class="btn btn-primary btn-sm">
-                                <span data-lang="tr">Rezervasyon Yap</span>
-                                <span data-lang="en">Book Now</span>
-                            </a>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span class="info-label">
+                                        <span data-lang="tr">Adres</span>
+                                        <span data-lang="en">Address</span>
+                                    </span>
+                                    <span class="info-value">Ankara Doğa Kampüsü Güvenç, Kazan, Ankara 06970</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span class="info-label">
+                                        <span data-lang="tr">Telefon</span>
+                                        <span data-lang="en">Phone</span>
+                                    </span>
+                                    <a href="tel:+905305735157" class="info-value">0530 573 5157</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="social-links-wrapper">
+                            <h4 class="social-title">
+                                <span data-lang="tr">Bizi Takip Edin</span>
+                                <span data-lang="en">Follow Us</span>
+                            </h4>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/ankaradogakampusu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Package 2: Premium -->
-                <div class="camp-card">
-                    <div class="camp-img-wrapper" style="height: 220px; overflow: hidden; position: relative;">
-                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Premium Karisik Izgara" class="camp-img" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-                        <span class="camp-badge bg-accent-tag">
-                            <span data-lang="tr">Popüler</span>
-                            <span data-lang="en">Popular</span>
-                        </span>
-                    </div>
-                    <div class="camp-body" style="padding: 24px;">
-                        <h3 class="camp-title" style="margin-bottom: 12px; font-size: 1.4rem;">
-                            <span data-lang="tr">Premium Karışık Izgara</span>
-                            <span data-lang="en">Premium Mix Grill</span>
-                        </h3>
-                        <p class="camp-text" style="font-size: 0.95rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 20px;">
-                            <span data-lang="tr">Marine edilmiş antrikot, özel köfteler, tavuk şiş, közlenmiş sebzeler, taze salata çeşitleri ve soğuk meze tabağının yer aldığı, ateşinizin hazır sunulduğu eksiksiz bir lezzet şöleni.</span>
-                            <span data-lang="en">Marinated steaks, special meatballs, chicken skewers, roasted vegetables, fresh salads, and side dishes served with a pre-lit barbecue ready for you to cook.</span>
-                        </p>
-                        <div class="camp-footer" style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 15px;">
-                            <a href="iletisim.html?camp=mangal-hizmeti#booking" class="btn btn-primary btn-sm">
-                                <span data-lang="tr">Rezervasyon Yap</span>
-                                <span data-lang="en">Book Now</span>
-                            </a>
+                <!-- Column 2: Working Web3Forms / Formspree Form -->
+                <div class="contact-form-col">
+                    <form action="https://formspree.io/f/mdajjwow" method="POST" class="booking-form" id="booking-form">
+                        <!-- Formspree Redirect to Success Page -->
+                        <input type="hidden" name="_next" value="https://ardaberkorak.github.io/ankaradogakampusu/success.html">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parent_name">
+                                    <span data-lang="tr">Veli Adı Soyadı *</span>
+                                    <span data-lang="en">Parent's Full Name *</span>
+                                </label>
+                                <input type="text" id="parent_name" name="parent_name" required placeholder="Örn: Ahmet Yılmaz">
+                            </div>
+                            <div class="form-group">
+                                <label for="child_name">
+                                    <span data-lang="tr">Katılımcı (Çocuk) Adı Soyadı *</span>
+                                    <span data-lang="en">Participant (Child) Name *</span>
+                                </label>
+                                <input type="text" id="child_name" name="child_name" required placeholder="Örn: Can Yılmaz">
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Package 3: VIP -->
-                <div class="camp-card">
-                    <div class="camp-img-wrapper" style="height: 220px; overflow: hidden; position: relative;">
-                        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80" alt="VIP Chef BBQ" class="camp-img" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-                        <span class="camp-badge bg-primary-tag">
-                            <span data-lang="tr">VIP</span>
-                            <span data-lang="en">VIP</span>
-                        </span>
-                    </div>
-                    <div class="camp-body" style="padding: 24px;">
-                        <h3 class="camp-title" style="margin-bottom: 12px; font-size: 1.4rem;">
-                            <span data-lang="tr">Özel Şef Hizmeti</span>
-                            <span data-lang="en">Private Chef Service</span>
-                        </h3>
-                        <p class="camp-text" style="font-size: 0.95rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 20px;">
-                            <span data-lang="tr">Size özel atanan mangal şefimizin hazırladığı gurme sunumlar, limitsiz sıcak-soğuk içecekler, özel konsept masa ve yemek sonrasında kamp ateşinde marshmallow keyfi.</span>
-                            <span data-lang="en">Gourmet selections cooked custom for you by a private grill chef, unlimited hot & cold soft drinks, beautifully themed table, and marshmallow roasting by the bonfire.</span>
-                        </p>
-                        <div class="camp-footer" style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 15px;">
-                            <a href="iletisim.html?camp=mangal-hizmeti#booking" class="btn btn-primary btn-sm">
-                                <span data-lang="tr">Rezervasyon Yap</span>
-                                <span data-lang="en">Book Now</span>
-                            </a>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    <span data-lang="tr">E-posta Adresi *</span>
+                                    <span data-lang="en">Email Address *</span>
+                                </label>
+                                <input type="email" id="email" name="email" required placeholder="ahmet@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">
+                                    <span data-lang="tr">Telefon Numarası *</span>
+                                    <span data-lang="en">Phone Number *</span>
+                                </label>
+                                <input type="tel" id="phone" name="phone" required placeholder="0 (555) 000 0000">
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="camp_select">
+                                    <span data-lang="tr">Kamp Tercihi *</span>
+                                    <span data-lang="en">Select Camp *</span>
+                                </label>
+                                <select id="camp_select" name="camp_select" required>
+                                    <option value="" disabled data-lang="tr">Seçiniz...</option>
+                                    <option value="" disabled data-lang="en">Choose...</option>
+                                    <option value="yaz-kampi" data-lang="tr">Yaz Keşif Kampı (7-12 Yaş)</option>
+                                    <option value="yaz-kampi" data-lang="en">Summer Discovery Camp (Ages 7-12)</option>
+                                    <option value="aile-kampi" data-lang="tr">Hafta Sonu Aile Kampı (Her Yaş)</option>
+                                    <option value="aile-kampi" data-lang="en">Weekend Family Camp (All Ages)</option>
+                                    <option value="kis-kampi" data-lang="tr">Kış Macera Kampı (12-17 Yaş)</option>
+                                    <option value="kis-kampi" data-lang="en">Winter Adventure Camp (Ages 12-17)</option>
+                                    <option value="mangal-hizmeti" selected data-lang="tr">Mangal & Barbekü Hizmeti</option>
+                                    <option value="mangal-hizmeti" selected data-lang="en">Barbecue & Grill Service</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <span data-lang="tr">Eklemek İstediğiniz Notlar</span>
+                                <span data-lang="en">Additional Notes</span>
+                            </label>
+                            <textarea id="message" name="message" rows="4" placeholder="Sağlık durumu, alerji veya ek istekleriniz..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-accent btn-full">
+                            <span data-lang="tr">Rezervasyon Talebi Gönder</span>
+                            <span data-lang="en">Submit Booking Request</span>
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
