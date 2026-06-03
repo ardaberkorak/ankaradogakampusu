@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ankara Doğa Kampüsü - Çocukların gelişimini destekleyen, macera ve eğitim dolu doğa aktiviteleri.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ardaberkorak.github.io/ankaradogakampusu/etkinlikler.html">
+    <meta property="og:title" content="Etkinliklerimiz | Ankara Doğa Kampüsü">
+    <meta property="og:description" content="Ankara Doğa Kampüsü - Çocukların gelişimini destekleyen, macera ve eğitim dolu doğa aktiviteleri.">
+    <meta property="og:image" content="https://ardaberkorak.github.io/ankaradogakampusu/images/hero-bg.png">
+
+    <title>Etkinliklerimiz | Ankara Doğa Kampüsü</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <!-- FontAwesome Icons -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/image.png">
+    <!-- LCP Image Preload -->
+    <link rel="preload" href="images/hero-bg.webp" as="image" type="image/webp">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom JS -->
+    <script src="js/main.js" defer></script>
+</head>
+<body class="lang-tr">
+
+    <!-- Header / Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" id="header-logo">
+                <img src="images/image.png" alt="Ankara Doğa Kampüsü" width="50" height="50" style="height: 50px; width: 50px;" loading="eager" fetchpriority="high">
+                <div class="logo-text">
+                    <span class="logo-title">ANKARA DOĞA</span>
+                    <span class="logo-subtitle">KAMPÜSÜ</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html#home" class="nav-link">
+                            <span data-lang="tr">Ana Sayfa</span>
+                            <span data-lang="en">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">
+                            <span data-lang="tr">Hakkımızda</span>
+                            <span data-lang="en">About Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#camps" class="nav-link">
+                            <span data-lang="tr">Kamplarımız</span>
+                            <span data-lang="en">Our Camps</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="etkinlikler.html" class="nav-link active">
+                            <span data-lang="tr">Etkinlikler</span>
+                            <span data-lang="en">Activities</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="iletisim.html" class="nav-link">
+                            <span data-lang="tr">İletişim</span>
+                            <span data-lang="en">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="dark-mode-btn" id="dark-mode-btn" aria-label="Karanlık Mod / Dark Mode">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+                <button class="lang-switch-btn" id="lang-switch-btn" aria-label="Dili Değiştir / Switch Language">
+                    <span class="lang-text">TR</span>
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                </button>
+                <a href="iletisim.html#booking" class="btn btn-primary btn-header">
+                    <span data-lang="tr">Rezervasyon</span>
+                    <span data-lang="en">Book Now</span>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Menüyü Aç">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+                <a href="index.html#home" class="mobile-nav-link">
+                    <span data-lang="tr">Ana Sayfa</span>
+                    <span data-lang="en">Home</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="index.html#about" class="mobile-nav-link">
+                    <span data-lang="tr">Hakkımızda</span>
+                    <span data-lang="en">About Us</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="index.html#camps" class="mobile-nav-link">
+                    <span data-lang="tr">Kamplarımız</span>
+                    <span data-lang="en">Our Camps</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="etkinlikler.html" class="mobile-nav-link active">
+                    <span data-lang="tr">Etkinlikler</span>
+                    <span data-lang="en">Activities</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="iletisim.html" class="mobile-nav-link">
+                    <span data-lang="tr">İletişim</span>
+                    <span data-lang="en">Contact</span>
+                </a>
+            </li>
+        </ul>
+        <div class="mobile-nav-actions">
+            <a href="iletisim.html#booking" class="btn btn-accent btn-full">
+                <span data-lang="tr">Rezervasyon Yap</span>
+                <span data-lang="en">Book a Spot</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Subpage Hero Banner -->
+    <section class="subpage-hero">
+        <div class="subpage-hero-overlay"></div>
+        <div class="subpage-hero-container">
+            <h1 class="subpage-hero-title">
+                <span data-lang="tr">Etkinliklerimiz</span>
+                <span data-lang="en">Our Activities</span>
+            </h1>
+            <div class="subpage-hero-breadcrumbs">
+                <a href="index.html">
+                    <span data-lang="tr">Ana Sayfa</span>
+                    <span data-lang="en">Home</span>
+                </a>
+                <span>/</span>
+                <span data-lang="tr">Etkinlikler</span>
+                <span data-lang="en">Activities</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">
+                    <i class="fa-solid fa-compass" aria-hidden="true"></i>
+                    <span data-lang="tr">Eğlenceli Eğitim</span>
+                    <span data-lang="en">Fun Education</span>
+                </span>
+                <h2 class="section-title">
+                    <span data-lang="tr">Kamp Etkinliklerimiz</span>
+                    <span data-lang="en">Our Camp Activities</span>
+                </h2>
+                <p class="section-desc max-600">
+                    <span data-lang="tr">Çocuklarımızın fiziksel, zihinsel ve sosyal gelişimlerini destekleyen, tamamı uzman rehberler gözetimindeki aktiviteler.</span>
+                    <span data-lang="en">Activities designed to support physical, mental, and social development of children, all under the guidance of expert leaders.</span>
+                </p>
+            </div>
+
+            <div class="activities-grid">
+                <!-- Activity 1 -->
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fa-solid fa-mountain-sun" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="activity-title">
+                        <span data-lang="tr">Kaya Tırmanışı</span>
+                        <span data-lang="en">Rock Climbing</span>
+                    </h3>
+                    <p class="activity-text">
+                        <span data-lang="tr">Güvenli yapay ve doğal tırmanış duvarlarında, denge, özgüven ve motor becerileri artıran tırmanış eğitimleri.</span>
+                        <span data-lang="en">Climbing trainings on safe artificial and natural rock walls that build balance, self-confidence, and motor skills.</span>
+                    </p>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="activity-title">
+                        <span data-lang="tr">Okçuluk Eğitimi</span>
+                        <span data-lang="en">Archery Training</span>
+                    </h3>
+                    <p class="activity-text">
+                        <span data-lang="tr">El-göz koordinasyonu, yüksek odaklanma becerisi ve hedefe kilitlenme disiplini aşılayan ata sporumuz.</span>
+                        <span data-lang="en">Nurturing eye-hand coordination, peak concentration, and target-focus discipline with our traditional sport.</span>
+                    </p>
+                </div>
+
+                <!-- Activity 3 -->
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="activity-title">
+                        <span data-lang="tr">Hedef Bulma (Oriyantiring)</span>
+                        <span data-lang="en">Orienteering Navigation</span>
+                    </h3>
+                    <p class="activity-text">
+                        <span data-lang="tr">Pusula ve özel doğa haritaları kullanarak orman içinde gizemli hedefleri hızlıca bulma ve takım oyunu.</span>
+                        <span data-lang="en">Finding hidden waypoints in the forest quickly using custom topographic maps, compass, and teamwork.</span>
+                    </p>
+                </div>
+
+                <!-- Activity 4 -->
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fa-solid fa-palette" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="activity-title">
+                        <span data-lang="tr">Doğa Sanat Atölyesi</span>
+                        <span data-lang="en">Nature Art Studio</span>
+                    </h3>
+                    <p class="activity-text">
+                        <span data-lang="tr">Toplanan yaprak, taş, kozalak ve ahşaplardan yaratıcı el yapımı hediyelikler ve çevre dostu tasarımlar.</span>
+                        <span data-lang="en">Creating beautiful and environmentally friendly designs from collected leaves, stones, twigs, and wood pieces.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Col 1: About -->
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo footer-logo">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-tree" aria-hidden="true"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">ANKARA DOĞA</span>
+                            <span class="logo-subtitle">KAMPÜSÜ</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        <span data-lang="tr">Çocuklarımızı doğanın kucağında, geleceğe güvenle hazırlayan, macera ve eğitim dolu premium kamp deneyimi.</span>
+                        <span data-lang="en">Premium camp experience filled with adventure and education, preparing children for the future in the heart of nature.</span>
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="footer-col links-col">
+                    <h4 class="footer-title">
+                        <span data-lang="tr">Hızlı Menü</span>
+                        <span data-lang="en">Quick Links</span>
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home"><span data-lang="tr">Ana Sayfa</span><span data-lang="en">Home</span></a></li>
+                        <li><a href="index.html#about"><span data-lang="tr">Hakkımızda</span><span data-lang="en">About Us</span></a></li>
+                        <li><a href="index.html#camps"><span data-lang="tr">Kamplarımız</span><span data-lang="en">Our Camps</span></a></li>
+                        <li><a href="etkinlikler.html"><span data-lang="tr">Etkinlikler</span><span data-lang="en">Activities</span></a></li>
+                        <li><a href="iletisim.html"><span data-lang="tr">İletişim</span><span data-lang="en">Contact</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Working Hours Info -->
+                <div class="footer-col credits-col">
+                    <h4 class="footer-title">
+                        <span data-lang="tr">Kampüs Saatleri</span>
+                        <span data-lang="en">Working Hours</span>
+                    </h4>
+                    <ul class="footer-info-list">
+                        <li>
+                            <strong>
+                                <span data-lang="tr">Hafta İçi:</span>
+                                <span data-lang="en">Weekdays:</span>
+                            </strong> 
+                            09:00 - 18:00
+                        </li>
+                        <li>
+                            <strong>
+                                <span data-lang="tr">Hafta Sonu:</span>
+                                <span data-lang="en">Weekends:</span>
+                            </strong> 
+                            08:30 - 20:00
+                        </li>
+                        <li>
+                            <strong>
+                                <span data-lang="tr">Ziyaretçi:</span>
+                                <span data-lang="en">Visitors:</span>
+                            </strong> 
+                            <span data-lang="tr">Her Gün Kabul</span>
+                            <span data-lang="en">Open Every Day</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    &copy; 2026 Ankara Doğa Kampüsü. 
+                    <span data-lang="tr">Tüm Hakları Saklıdır.</span>
+                    <span data-lang="en">All Rights Reserved.</span>
+                </p>
+                <p class="academic-note">
+                    <span data-lang="tr">Doğa ve Macera Aşkıyla Tasarlanmıştır.</span>
+                    <span data-lang="en">Crafted with Love for Nature & Adventure.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

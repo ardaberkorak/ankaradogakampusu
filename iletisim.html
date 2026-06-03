@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ankara Doğa Kampüsü - İletişim ve Rezervasyon formu. Bizimle iletişime geçin ve kamp rezervasyonunuzu yapın.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ardaberkorak.github.io/ankaradogakampusu/iletisim.html">
+    <meta property="og:title" content="İletişim & Rezervasyon | Ankara Doğa Kampüsü">
+    <meta property="og:description" content="Ankara Doğa Kampüsü - İletişim ve Rezervasyon formu. Bizimle iletişime geçin ve kamp rezervasyonunuzu yapın.">
+    <meta property="og:image" content="https://ardaberkorak.github.io/ankaradogakampusu/images/hero-bg.png">
+
+    <title>İletişim & Rezervasyon | Ankara Doğa Kampüsü</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <!-- FontAwesome Icons -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/image.png">
+    <!-- LCP Image Preload -->
+    <link rel="preload" href="images/hero-bg.webp" as="image" type="image/webp">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom JS -->
+    <script src="js/main.js" defer></script>
+</head>
+<body class="lang-tr">
+
+    <!-- Header / Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" id="header-logo">
+                <img src="images/image.png" alt="Ankara Doğa Kampüsü" width="50" height="50" style="height: 50px; width: 50px;" loading="eager" fetchpriority="high">
+                <div class="logo-text">
+                    <span class="logo-title">ANKARA DOĞA</span>
+                    <span class="logo-subtitle">KAMPÜSÜ</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html#home" class="nav-link">
+                            <span data-lang="tr">Ana Sayfa</span>
+                            <span data-lang="en">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">
+                            <span data-lang="tr">Hakkımızda</span>
+                            <span data-lang="en">About Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#camps" class="nav-link">
+                            <span data-lang="tr">Kamplarımız</span>
+                            <span data-lang="en">Our Camps</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="etkinlikler.html" class="nav-link">
+                            <span data-lang="tr">Etkinlikler</span>
+                            <span data-lang="en">Activities</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="iletisim.html" class="nav-link active">
+                            <span data-lang="tr">İletişim</span>
+                            <span data-lang="en">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="dark-mode-btn" id="dark-mode-btn" aria-label="Karanlık Mod / Dark Mode">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+                <button class="lang-switch-btn" id="lang-switch-btn" aria-label="Dili Değiştir / Switch Language">
+                    <span class="lang-text">TR</span>
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                </button>
+                <a href="#booking" class="btn btn-primary btn-header">
+                    <span data-lang="tr">Rezervasyon</span>
+                    <span data-lang="en">Book Now</span>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Menüyü Aç">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+                <a href="index.html#home" class="mobile-nav-link">
+                    <span data-lang="tr">Ana Sayfa</span>
+                    <span data-lang="en">Home</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="index.html#about" class="mobile-nav-link">
+                    <span data-lang="tr">Hakkımızda</span>
+                    <span data-lang="en">About Us</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="index.html#camps" class="mobile-nav-link">
+                    <span data-lang="tr">Kamplarımız</span>
+                    <span data-lang="en">Our Camps</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="etkinlikler.html" class="mobile-nav-link">
+                    <span data-lang="tr">Etkinlikler</span>
+                    <span data-lang="en">Activities</span>
+                </a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="iletisim.html" class="mobile-nav-link active">
+                    <span data-lang="tr">İletişim</span>
+                    <span data-lang="en">Contact</span>
+                </a>
+            </li>
+        </ul>
+        <div class="mobile-nav-actions">
+            <a href="#booking" class="btn btn-accent btn-full">
+                <span data-lang="tr">Rezervasyon Yap</span>
+                <span data-lang="en">Book a Spot</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Subpage Hero Banner -->
+    <section class="subpage-hero">
+        <div class="subpage-hero-overlay"></div>
+        <div class="subpage-hero-container">
+            <h1 class="subpage-hero-title">
+                <span data-lang="tr">İletişim & Rezervasyon</span>
+                <span data-lang="en">Contact & Booking</span>
+            </h1>
+            <div class="subpage-hero-breadcrumbs">
+                <a href="index.html">
+                    <span data-lang="tr">Ana Sayfa</span>
+                    <span data-lang="en">Home</span>
+                </a>
+                <span>/</span>
+                <span data-lang="tr">İletişim</span>
+                <span data-lang="en">Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Booking Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <span data-lang="tr">İletişim & Rezervasyon</span>
+                    <span data-lang="en">Contact & Booking</span>
+                </span>
+                <h2 class="section-title">
+                    <span data-lang="tr">Doğaya İlk Adımı Atın</span>
+                    <span data-lang="en">Take Your First Step Into Nature</span>
+                </h2>
+                <p class="section-desc max-600">
+                    <span data-lang="tr">Kamp rezervasyonu, detaylı bilgi veya her türlü sorunuz için formumuzu doldurabilir ya da bizimle doğrudan iletişime geçebilirsiniz.</span>
+                    <span data-lang="en">Fill out our form for camp booking, detailed inquiries, or any questions, or reach out to us directly.</span>
+                </p>
+            </div>
+
+            <div class="contact-grid" id="booking">
+                <!-- Column 1: Info Box -->
+                <div class="contact-info-col">
+                    <div class="info-card">
+                        <h3 class="info-card-title">
+                            <span data-lang="tr">İletişim Bilgilerimiz</span>
+                            <span data-lang="en">Contact Information</span>
+                        </h3>
+                        <p class="info-card-desc">
+                            <span data-lang="tr">Kampüsümüz haftanın her günü doğa severleri ağırlamak için hizmetinizdedir.</span>
+                            <span data-lang="en">Our campus is open every day of the week to welcome nature lovers.</span>
+                        </p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span class="info-label">
+                                        <span data-lang="tr">Adres</span>
+                                        <span data-lang="en">Address</span>
+                                    </span>
+                                    <span class="info-value">Ankara Doğa Kampüsü Güvenç, Kazan, Ankara 06970</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span class="info-label">
+                                        <span data-lang="tr">Telefon</span>
+                                        <span data-lang="en">Phone</span>
+                                    </span>
+                                    <a href="tel:+905305735157" class="info-value">0530 573 5157</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="social-links-wrapper">
+                            <h4 class="social-title">
+                                <span data-lang="tr">Bizi Takip Edin</span>
+                                <span data-lang="en">Follow Us</span>
+                            </h4>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/ankaradogakampusu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Working Web3Forms / Formspree Form -->
+                <div class="contact-form-col">
+                    <form action="https://formspree.io/f/mdajjwow" method="POST" class="booking-form" id="booking-form">
+                        <!-- Formspree Redirect to Success Page -->
+                        <input type="hidden" name="_next" value="https://ardaberkorak.github.io/ankaradogakampusu/success.html">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parent_name">
+                                    <span data-lang="tr">Veli Adı Soyadı *</span>
+                                    <span data-lang="en">Parent's Full Name *</span>
+                                </label>
+                                <input type="text" id="parent_name" name="parent_name" required placeholder="Örn: Ahmet Yılmaz">
+                            </div>
+                            <div class="form-group">
+                                <label for="child_name">
+                                    <span data-lang="tr">Katılımcı (Çocuk) Adı Soyadı *</span>
+                                    <span data-lang="en">Participant (Child) Name *</span>
+                                </label>
+                                <input type="text" id="child_name" name="child_name" required placeholder="Örn: Can Yılmaz">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    <span data-lang="tr">E-posta Adresi *</span>
+                                    <span data-lang="en">Email Address *</span>
+                                </label>
+                                <input type="email" id="email" name="email" required placeholder="ahmet@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">
+                                    <span data-lang="tr">Telefon Numarası *</span>
+                                    <span data-lang="en">Phone Number *</span>
+                                </label>
+                                <input type="tel" id="phone" name="phone" required placeholder="0 (555) 000 0000">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="camp_select">
+                                    <span data-lang="tr">Kamp Tercihi *</span>
+                                    <span data-lang="en">Select Camp *</span>
+                                </label>
+                                <select id="camp_select" name="camp_select" required>
+                                    <option value="" disabled selected data-lang="tr">Seçiniz...</option>
+                                    <option value="" disabled selected data-lang="en">Choose...</option>
+                                    <option value="yaz-kampi" data-lang="tr">Yaz Keşif Kampı (7-12 Yaş)</option>
+                                    <option value="yaz-kampi" data-lang="en">Summer Discovery Camp (Ages 7-12)</option>
+                                    <option value="aile-kampi" data-lang="tr">Hafta Sonu Aile Kampı (Her Yaş)</option>
+                                    <option value="aile-kampi" data-lang="en">Weekend Family Camp (All Ages)</option>
+                                    <option value="kis-kampi" data-lang="tr">Kış Macera Kampı (12-17 Yaş)</option>
+                                    <option value="kis-kampi" data-lang="en">Winter Adventure Camp (Ages 12-17)</option>
+                                    <option value="mangal-hizmeti" data-lang="tr">Mangal & Barbekü Hizmeti</option>
+                                    <option value="mangal-hizmeti" data-lang="en">Barbecue & Grill Service</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <span data-lang="tr">Eklemek İstediğiniz Notlar</span>
+                                <span data-lang="en">Additional Notes</span>
+                            </label>
+                            <textarea id="message" name="message" rows="4" placeholder="Sağlık durumu, alerji veya ek istekleriniz..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-accent btn-full">
+                            <span data-lang="tr">Rezervasyon Talebi Gönder</span>
+                            <span data-lang="en">Submit Booking Request</span>
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Col 1: About -->
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo footer-logo">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-tree" aria-hidden="true"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">ANKARA DOĞA</span>
+                            <span class="logo-subtitle">KAMPÜSÜ</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        <span data-lang="tr">Çocuklarimizi doğanın kucağında, geleceğe güvenle hazırlayan, macera ve eğitim dolu premium kamp deneyimi.</span>
+                        <span data-lang="en">Premium camp experience filled with adventure and education, preparing children for the future in the heart of nature.</span>
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="footer-col links-col">
+                    <h4 class="footer-title">
+                        <span data-lang="tr">Hızlı Menü</span>
+                        <span data-lang="en">Quick Links</span>
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home"><span data-lang="tr">Ana Sayfa</span><span data-lang="en">Home</span></a></li>
+                        <li><a href="index.html#about"><span data-lang="tr">Hakkımızda</span><span data-lang="en">About Us</span></a></li>
+                        <li><a href="index.html#camps"><span data-lang="tr">Kamplarımız</span><span data-lang="en">Our Camps</span></a></li>
+                        <li><a href="etkinlikler.html"><span data-lang="tr">Etkinlikler</span><span data-lang="en">Activities</span></a></li>
+                        <li><a href="iletisim.html"><span data-lang="tr">İletişim</span><span data-lang="en">Contact</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Working Hours Info -->
+                <div class="footer-col credits-col">
+                    <h4 class="footer-title">
+                        <span data-lang="tr">Kampüs Saatleri</span>
+                        <span data-lang="en">Working Hours</span>
+                    </h4>
+                    <ul class="footer-info-list">
+                        <li>
+                            <strong>
+                                <span data-lang="tr">Hafta İçi:</span>
+                                <span data-lang="en">Weekdays:</span>
+                            </strong> 
+                            09:00 - 18:00
+                        </li>
+                        <li>
+                            <strong>
+                                <span data-lang="tr">Hafta Sonu:</span>
+                                <span data-lang="en">Weekends:</span>
+                            </strong> 
+                            08:30 - 20:00
+                        </li>
+                        <li>
+                            <strong>
+                                <span data-lang="tr">Ziyaretçi:</span>
+                                <span data-lang="en">Visitors:</span>
+                            </strong> 
+                            <span data-lang="tr">Her Gün Kabul</span>
+                            <span data-lang="en">Open Every Day</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    &copy; 2026 Ankara Doğa Kampüsü. 
+                    <span data-lang="tr">Tüm Hakları Saklıdır.</span>
+                    <span data-lang="en">All Rights Reserved.</span>
+                </p>
+                <p class="academic-note">
+                    <span data-lang="tr">Doğa ve Macera Aşkıyla Tasarlanmıştır.</span>
+                    <span data-lang="en">Crafted with Love for Nature & Adventure.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

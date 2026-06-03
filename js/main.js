@@ -63,6 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', cacheSectionGeometry);
 
     window.addEventListener('scroll', () => {
+        // Only run scroll-based active state highlighting on the homepage
+        if (!document.getElementById('home')) {
+            return;
+        }
+
         if (sectionData.length === 0) {
             cacheSectionGeometry();
         }
@@ -78,7 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         navLinks.forEach(link => {
             link.classList.remove('active');
-            if (link.getAttribute('href') === `#${currentSectionId}`) {
+            const href = link.getAttribute('href');
+            if (href === `#${currentSectionId}` || (href && href.endsWith(`#${currentSectionId}`))) {
                 link.classList.add('active');
             }
         });

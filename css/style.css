@@ -1613,6 +1613,76 @@ a.info-value:hover {
 }
 
 
+
+/* --- SUBPAGE HERO --- */
+.subpage-hero {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/hero-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+    padding-top: var(--header-height);
+    text-align: center;
+}
+
+.subpage-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(27, 67, 50, 0.9) 100%);
+    z-index: 1;
+}
+
+.subpage-hero-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.subpage-hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.subpage-hero-breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    color: var(--accent-light);
+    font-weight: 600;
+}
+
+.subpage-hero-breadcrumbs a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: var(--transition-fast);
+}
+
+.subpage-hero-breadcrumbs a:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .subpage-hero {
+        height: 280px;
+    }
+    .subpage-hero-title {
+        font-size: 2.5rem;
+    }
+}
+
 /* --- DARK MODE VARIABLES & OVERRIDES --- */
 body.dark-mode {
     --bg-light: #0b0f19;
