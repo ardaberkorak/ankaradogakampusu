@@ -58,11 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }));
     };
 
-    // Cache geometry on load and resize
-    cacheSectionGeometry();
+    // Cache geometry on window load and resize
+    window.addEventListener('load', cacheSectionGeometry);
     window.addEventListener('resize', cacheSectionGeometry);
 
     window.addEventListener('scroll', () => {
+        if (sectionData.length === 0) {
+            cacheSectionGeometry();
+        }
         let currentSectionId = '';
         const scrollPosition = window.scrollY + 130; // offset for sticky header
 
