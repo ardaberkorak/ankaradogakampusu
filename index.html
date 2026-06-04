@@ -153,7 +153,22 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-showcase">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('images/camp-new-1.webp');"></div>
+            <div class="hero-slide" style="background-image: url('images/camp-new-6.webp');"></div>
+            <div class="hero-slide" style="background-image: url('images/camp-new-2.webp');"></div>
+            <div class="hero-slide" style="background-image: url('images/camp-new-3.webp');"></div>
+        </div>
         <div class="hero-overlay"></div>
+        
+        <!-- Slider Navigation Buttons -->
+        <button class="slider-btn prev-btn" id="hero-prev-btn" aria-label="Önceki Görsel">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <button class="slider-btn next-btn" id="hero-next-btn" aria-label="Sonraki Görsel">
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        </button>
+
         <div class="container hero-container">
             <div class="hero-content">
                 <span class="hero-badge">
@@ -191,10 +206,10 @@
                 <div class="about-images-col">
                     <div class="image-mosaic">
                         <div class="mosaic-item main-img-wrapper">
-                            <img src="images/about-main.webp" alt="Doğada keşif yapan çocuklar" class="mosaic-img main-img" width="727" height="909" loading="lazy">
+                            <img src="images/camp-new-4.webp" alt="Doğada keşif yapan çocuklar" class="mosaic-img main-img" width="727" height="909" loading="lazy">
                         </div>
                         <div class="mosaic-item sub-img-wrapper">
-                            <img src="images/about-sub.webp" alt="Ormanda kamp çadırı" class="mosaic-img sub-img" width="511" height="292" loading="lazy">
+                            <img src="images/camp-new-5.webp" alt="Ormanda kamp çadırı" class="mosaic-img sub-img" width="511" height="292" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -293,7 +308,7 @@
                 <!-- Card 1: Yaz Kampı -->
                 <div class="camp-card">
                     <div class="camp-img-wrapper">
-                        <img src="images/camp-summer.webp" alt="Yaz Kampı Ateş Başında Çocuklar" class="camp-img" width="914" height="913" loading="lazy">
+                        <img src="images/camp-new-6.webp" alt="Yaz Kampı Ateş Başında Çocuklar" class="camp-img" width="914" height="913" loading="lazy">
                         <span class="camp-badge">
                             <span data-lang="tr">Popüler</span>
                             <span data-lang="en">Popular</span>
@@ -332,7 +347,7 @@
                 <!-- Card 2: Hafta Sonu Aile Kampı -->
                 <div class="camp-card">
                     <div class="camp-img-wrapper">
-                        <img src="images/camp-family.jpg" alt="Hafta sonu doğa kampı çadırlar" class="camp-img" width="600" height="400" loading="lazy">
+                        <img src="images/camp-new-3.webp" alt="Hafta sonu doğa kampı çadırlar" class="camp-img" width="600" height="400" loading="lazy">
                         <span class="camp-badge bg-accent-tag">
                             <span data-lang="tr">Aile Boyu</span>
                             <span data-lang="en">Family</span>
@@ -371,7 +386,7 @@
                 <!-- Card 3: Kış Macera Kampı -->
                 <div class="camp-card">
                     <div class="camp-img-wrapper">
-                        <img src="images/camp-winter.jpg" alt="Kış kampı kar altında çadır" class="camp-img" width="600" height="400" loading="lazy">
+                        <img src="images/camp-winter.webp" alt="Kış kampı kar altında çadır" class="camp-img" width="600" height="400" loading="lazy">
                         <span class="camp-badge bg-primary-tag">
                             <span data-lang="tr">Yeni</span>
                             <span data-lang="en">New</span>
@@ -423,9 +438,7 @@
                 <!-- Col 1: About -->
                 <div class="footer-col brand-col">
                     <a href="#" class="logo footer-logo">
-                        <div class="logo-icon">
-                            <i class="fa-solid fa-tree" aria-hidden="true"></i>
-                        </div>
+                        <img src="images/image.png" alt="Ankara Doğa Kampüsü" width="50" height="50" style="height: 50px; width: 50px;" loading="lazy">
                         <div class="logo-text">
                             <span class="logo-title">ANKARA DOĞA</span>
                             <span class="logo-subtitle">KAMPÜSÜ</span>
