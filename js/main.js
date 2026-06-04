@@ -106,6 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
             langText.textContent = 'EN';
             localStorage.setItem('preferred-lang', 'tr');
         }
+
+        // Translate select options dynamically (to fix macOS display:none option rendering bug)
+        const selectOptions = document.querySelectorAll('select option[data-tr]');
+        selectOptions.forEach(option => {
+            option.textContent = lang === 'en' ? option.getAttribute('data-en') : option.getAttribute('data-tr');
+        });
     };
 
     // Load saved preference or default to TR
