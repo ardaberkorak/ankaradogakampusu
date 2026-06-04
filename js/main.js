@@ -112,6 +112,12 @@ document.addEventListener('DOMContentLoaded', () => {
         selectOptions.forEach(option => {
             option.textContent = lang === 'en' ? option.getAttribute('data-en') : option.getAttribute('data-tr');
         });
+
+        // Translate placeholders dynamically (since HTML attributes cannot be targeted via CSS localization)
+        const placeholderElements = document.querySelectorAll('[data-placeholder-tr]');
+        placeholderElements.forEach(el => {
+            el.setAttribute('placeholder', lang === 'en' ? el.getAttribute('data-placeholder-en') : el.getAttribute('data-placeholder-tr'));
+        });
     };
 
     // Load saved preference or default to TR
