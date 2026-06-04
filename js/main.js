@@ -220,4 +220,49 @@ document.addEventListener('DOMContentLoaded', () => {
             enableDarkMode();
         }
     });
+
+    // 8. Hero Background Slider
+    const slides = document.querySelectorAll('.hero-slide');
+    const prevBtn = document.getElementById('hero-prev-btn');
+    const nextBtn = document.getElementById('hero-next-btn');
+
+    if (slides.length > 0) {
+        let currentSlide = 0;
+        let slideInterval;
+
+        const showSlide = (index) => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        };
+
+        const startAutoplay = () => {
+            stopAutoplay();
+            slideInterval = setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, 6000); // Autoplay slide every 6 seconds
+        };
+
+        const stopAutoplay = () => {
+            if (slideInterval) {
+                clearInterval(slideInterval);
+            }
+        };
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                showSlide(currentSlide + 1);
+                startAutoplay(); // Reset interval
+            });
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                showSlide(currentSlide - 1);
+                startAutoplay(); // Reset interval
+            });
+        }
+
+        startAutoplay();
+    }
 });
