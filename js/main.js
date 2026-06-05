@@ -263,6 +263,43 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+        // Touch Swipe Support for Mobile Devices
+        const heroSlider = document.querySelector('.hero-slider');
+        if (heroSlider) {
+            let touchStartX = 0;
+            let touchStartY = 0;
+            let touchEndX = 0;
+            let touchEndY = 0;
+
+            heroSlider.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                touchStartY = e.changedTouches[0].screenY;
+            }, { passive: true });
+
+            heroSlider.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                touchEndY = e.changedTouches[0].screenY;
+                handleSwipeGesture();
+            }, { passive: true });
+
+            const handleSwipeGesture = () => {
+                const diffX = touchEndX - touchStartX;
+                const diffY = touchEndY - touchStartY;
+
+                // Only trigger if swipe is horizontal and exceeds the threshold of 50px
+                if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+                    if (diffX < 0) {
+                        // Swipe left -> Next Slide
+                        showSlide(currentSlide + 1);
+                    } else {
+                        // Swipe right -> Previous Slide
+                        showSlide(currentSlide - 1);
+                    }
+                    startAutoplay(); // Reset interval on interaction
+                }
+            };
+        }
+
         startAutoplay();
     }
 });
